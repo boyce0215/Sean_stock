@@ -13,15 +13,32 @@ var KTDatatableDataLocalDemo = function() {
 		
 			var datatable = $('.kt_datatable').KTDatatable({
 			// datasource definition
+			// data: {
+			// 	type: 'local',
+			// 	source: dataJSONArray,
+			// },
 			data: {
-				type: 'local',
-				source: dataJSONArray,
+				type: 'remote',
+				source: {
+					read: {
+						url: 'https://heroku-stock-info.herokuapp.com/filtered_list',
+						map: function(raw) {
+							// sample data mapping
+							var dataSet = raw;
+							if (typeof raw.data !== 'undefined') {
+								dataSet = raw.data;
+							}
+							return dataSet;
+						},
+					},
+				},
 			},
 
 			// layout definition
 			layout: {
 				scroll: true, // enable/disable datatable scroll both horizontal and vertical when needed.
-				height: 550, // datatable's body's fixed height
+				minHeight: 400,
+				height: 400, // datatable's body's fixed height
 				footer: false, // display/hide footer
 			},
 
