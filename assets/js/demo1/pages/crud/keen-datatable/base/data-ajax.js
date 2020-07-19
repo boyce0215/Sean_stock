@@ -13,7 +13,7 @@ var KTDatatableRemoteAjaxDemo = function() {
 				type: 'remote',
 				source: {
 					read: {
-						url: 'https://boyce0215.github.io/Sean_stock/json/default2.json',
+						url: 'https://run.mocky.io/v3/39152614-fbda-46da-b5c4-06e9498364ea',
 						map: function(raw) {
 							// sample data mapping
 							var dataSet = raw;

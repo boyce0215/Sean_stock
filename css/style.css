@@ -1,6 +1,6 @@
 /* line 1, sass/style.sass */
-* {
-  background: #000;
+.ps__rail-x, .ps__rail-y {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
