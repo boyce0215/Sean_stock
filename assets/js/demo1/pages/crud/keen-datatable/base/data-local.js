@@ -22,6 +22,7 @@ var KTDatatableDataLocalDemo = function() {
 				source: {
 					read: {
 						url: 'https://heroku-stock-info.herokuapp.com/filtered_list',
+						method: 'GET',
 						map: function(raw) {
 							// sample data mapping
 							var dataSet = raw;
