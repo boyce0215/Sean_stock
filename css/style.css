@@ -3,4 +3,26 @@
   opacity: 1;
 }
 
+/* line 4, sass/style.sass */
+.red_bg {
+  background-color: #fd3a3a !important;
+}
+
+/* line 6, sass/style.sass */
+.red_bg span {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+/* line 10, sass/style.sass */
+.green_bg {
+  background-color: #42a542 !important;
+}
+
+/* line 12, sass/style.sass */
+.green_bg span {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */
